@@ -30,6 +30,7 @@ for i in range(64):
     else:
         heads_in_a_row += 1
     print("Heads in a Row:" ,heads_in_a_row)
+    
 def isPrime(n):
     prime = True
     for i in range(2,math.floor(math.sqrt(n))):
