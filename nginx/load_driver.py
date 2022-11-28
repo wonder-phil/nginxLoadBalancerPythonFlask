@@ -23,7 +23,7 @@ app.config['CORS_HEADERS'] = 'Content-Type'
 #
 @app.route("/get")
 def hello_world():
-    response = requests.get(url,headers={'Content-type': "charset=UTF-8"}, stream=True)
+    response = requests.get(url,headers={'Content-type': "application/json"}, stream=True)
     data =response.raw.read()
     print(data,response)
     return data
