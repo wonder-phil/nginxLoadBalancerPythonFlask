@@ -15,5 +15,5 @@ TO get this working:
 1. docker-compose up
 2. python3 load_driver.py
 3. curl -v -X GET "http://localhost:8080/"
-4. curl -H "Content-Type: application/json"  "{\"heads\":6 }" -X POST "http://localhost:8080/compute"
+4. curl -H "Content-Type: application/json" -d "{\"heads\":6 }" -X POST "http://localhost:8080/compute"
 
