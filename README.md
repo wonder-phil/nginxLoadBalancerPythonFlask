@@ -17,3 +17,5 @@ TO get this working:
 3. curl -v -X GET "http://localhost:8080/"
 4. curl -H "Content-Type: application/json" -d "{\\"heads\\":6 }" -X POST "http://localhost:8080/compute"
 
+# NOTE clear docker containers from the cache
+## docker-compose down --rmi all
