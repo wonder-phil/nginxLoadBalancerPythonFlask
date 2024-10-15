@@ -29,7 +29,7 @@ def hello_world():
     return data
 
 #
-# curl -v -d "{\"heads\":6 }" -X POST "http://localhost:5000/compute"
+# curl -v "Content-Type: application/json"  -H -d "{\"heads\":6 }" -X POST "http://localhost:5000/compute"
 #
 @app.route("/compute", methods=['POST'])
 def store_score():
